@@ -74,46 +74,46 @@
 # I’ll review it like a backend code review 👨‍💻🔥
 
 #incoming data from the user 
-user_data  = { 
-    "id" :101 , 
-    "email" : "prashant@gmail.com" , 
-    "age" : 65 , 
-    "roles" :["user" , "editor" , "admin"],
-    "isactive" : True 
-}
+# user_data  = { 
+#     "id" :101 , 
+#     "email" : "prashant@gmail.com" , 
+#     "age" : 65 , 
+#     "roles" :["user" , "editor" , "admin"],
+#     "isactive" : True 
+# }
 
 
-#extracting variables with correct types : 
+# #extracting variables with correct types : 
 
-user_id = int(user_data["id"])
-email = str(user_data["email"])
-age = int(user_data["age"])
-roles = set(user_data["roles"])
-is_Active = bool(user_data["isactive"])
-
-
-#evaluation of eligibility 
-is_Eligible = (
-age > 18 
-and age < 60
-and is_Active 
-and "admin" in roles
-)
+# user_id = int(user_data["id"])
+# email = str(user_data["email"])
+# age = int(user_data["age"])
+# roles = set(user_data["roles"])
+# is_Active = bool(user_data["isactive"])
 
 
-#backend response object : 
-response = { 
-   "user_id" : user_id ,
-   "email" : email , 
-   "roles" : list(roles), 
-   "eligibility" : is_Eligible
-}
+# #evaluation of eligibility 
+# is_Eligible = (
+# age > 18 
+# and age < 60
+# and is_Active 
+# and "admin" in roles
+# )
 
-#check elgilibily : (BOOLEAN CHECK)
-if not response["eligibility"]: 
-  print("You are not ELigbile")
 
-print(response)
+# #backend response object : 
+# response = { 
+#    "user_id" : user_id ,
+#    "email" : email , 
+#    "roles" : list(roles), 
+#    "eligibility" : is_Eligible
+# }
+
+# #check elgilibily : (BOOLEAN CHECK)
+# if not response["eligibility"]: 
+#   print("You are not ELigbile")
+
+# print(response)
 # ---------------------------------------------------------------------------
 
 #Type Casting a Variable
@@ -220,4 +220,50 @@ print(response)
 
 
 # ---------------------------------------------------------------------------
+
+# CONTROL STATEMENTS : IF , FOR , RANGE 
+
+#IF STATEMENS :  a decision gate in a system in backend system it is widely used for  every request which goes through muliple decision gates . 
+
+# EXAMPLE : Real Backend Use Case 2: Rule-Based Logic (ML + Backend)
+# In your recommendation system:
+# “Only recommend content if similarity score ≥ threshold”
+
+# similarity_score = 4.5 
+# threshold = 3.5 
+
+# if similarity_score >= threshold: 
+#   print("You can recommend the system to me")
+
+# ---------------------------------------------------------------------------
+
+# FOR STATEMENTS : 
+# Real Backend Use Case 2: Ranking Content
+# Problem
+# You have similarity scores for multiple contents.
+
+# scores = [
+#     {"id": 1, "score": 0.8},
+#     {"id": 2, "score": 0.6},
+#     {"id": 3, "score": 0.9}
+# ]
+
+# for item in scores: 
+#   if item["score"] >= 0.7: 
+#     print("Recommend:" , item["id"])
+
+# ---------------------------------------------------------------------------
+
+# RANGE() FUNCITON : 
+
+
+
+
+
+
+
+
+
+
+
 
