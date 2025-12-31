@@ -363,22 +363,50 @@ match method :
     print("Invalid Data")
 
 
+# ---------------------------------------------------------------------------
+#! Terinary Conditional statement : 
+
+#? Interaction with return (IMPORTANT)
+#? You can use ternary inside return safely.
+
+# def get_message(is_active):
+#     return "OK" if is_active else "BLOCKED"
+
+#? Use case in : Score Categorization (Your Project)
+
+# score = 0.83 
+# category = "High" if score > 0.75 else "Low"
+# print(category)
 
 
+#^ Problem associated with Terninary COnditonal Statement : 
+#? Problem (Project-Aligned)
+#? You have:
+#? score = 0.65
+# ?threshold = 0.7
+#? Task
+#? Create:
+#? decision: "RECOMMEND" or "SKIP"
+#? message: "Shown to user" or "Hidden due to low score"
+#? Using ternary expressions only.
 
+# score = 0.65 
+# threshold = 0.7 
+# user_id = 749
 
+# response = {
+#    "user_id"  : user_id ,
+#    "decision" : "RECOMMEND" if score > 0.5 else "SKIP" ,
+#    "message" : "Shown to user" if threshold >= 0.65 else "Hidden due to low score"
+# }
 
-
-
-
-
-
-
+# print(response)
 
 
 # ---------------------------------------------------------------------------
 
-
+#! 
+print("Hello workd")
 
 
 
